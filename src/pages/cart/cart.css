@@ -1,0 +1,88 @@
+/*start*/
+.wrapper-contianer-cart{
+    width: 300px;
+    overflow: hidden;
+    position: absolute;
+    z-index: 6;
+    background-color: #fff;
+    box-shadow: 0 1px 4px 0 #585757;
+    border-top: 3px solid var(--primary-hover-color);
+    right: 3.5%;
+    top: 11%;
+    padding: 5px 0 5px 0;
+    animation: animationuser 1s;
+}
+.message-cart{
+    color: var(--primary-color);    
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0 10px 0 10px;
+    text-align: center;
+}
+.contianer-cart{
+    display: flex;
+    justify-content: center;
+    color: var(--primary-color);
+    padding: 11%;
+    border-bottom: 1px solid var(--primary-hover-color);
+}
+.info-item-cart{
+    margin: 0 10% 0 10%;
+}
+.title-item-cart{
+    font-size: 20px;
+    font-weight: 300;
+    padding: 2px;
+    margin: 0;
+}
+.price-item-cart{
+    margin-top: 10px;
+    color: var(--primary-hover-color);
+}
+.img-item-cart{
+    width: 70px;
+    object-fit: cover;
+    box-shadow: 0 0px 1px 0 #585757;
+
+}
+.icon-x-cart{
+    font-size: 16px;
+    margin: 2% 0 0 7%;
+    cursor: pointer;
+}
+.icon-x-cart:hover{
+    color: red;
+    transition: 0.7ms;
+}
+.contianer-pricetable-cart{
+    color: black;
+}
+.wrapper-subtable-cart {
+    width: 100%;
+    padding: 5px;
+
+}
+.Btn-Cart{
+    background-color: var(--primary-hover-color);
+    color: var(--secondary-color);
+    padding: 0px 26px;
+    font-size: 19px;
+    border-radius: 20px;
+    height: 37px;
+    margin:10px 28%;
+    transition: 0.7s;
+    cursor: pointer;
+}
+.Btn-Cart:hover{
+    background-color: var(--primary-color);
+}
+@keyframes animationuser{
+    0%{
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

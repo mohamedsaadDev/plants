@@ -1,0 +1,234 @@
+
+/*start banner*/
+.Banner-backgruond-NavBar{
+    background-image: url(../../imges/banner.jpg);
+    height: 100%;
+    float: left;
+    z-index: -1;
+    position: absolute;
+    right: auto;
+    width: 50%;
+    top: 0;
+    overflow: hidden;
+}
+/*end banner*/
+/*start Navigaton*/
+.continer-nav{
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 500;
+}
+.continer-nav-Scrolle{
+    width: 100%;
+    height: 90px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10000;
+    background-color: var(--primary-hover-color);
+}
+.Wrapper-Navigation{
+    display: flex;
+    align-items: center;
+    margin-right: 8%;
+}
+.Navigation{
+    display: flex;
+    align-items: center;
+}
+.Top-Menu-Navigation{
+    display: none;
+    background-color: var(--primary-hover-color);
+}
+.Title-Menu-Navbar{
+    font-weight: bold;
+    font-size: 20px;
+}
+.Navigation > li {
+    color:#fff ;
+    padding: 15px ;
+}
+.Navigation > li .navbar-link-menu{
+    color:#777777;
+}
+.Navigation > li .navbar-link-menu:hover{
+    color: var(--primary-hover-color);
+}
+.Navigation .menu{
+    position: relative;
+}
+.Navigation .SubMenu{
+    position: absolute;
+    top: 42px;
+    left: 0;
+    width: 220px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 1px 1px var(--primary-color);
+    border-top: 2px solid var(--primary-hover-color);
+    display: none;
+}
+.Navigation .SubMenu li{
+    padding: 10px;
+}
+.Navigation .menu:hover .SubMenu {
+    display: block;
+    transition: 0.3s;
+    z-index: 2;
+    animation:  animationuser 1.5s ;
+}
+.Mobile-SubMenu{
+    display: none;
+}
+/*start Navbar icon */
+.wrapper-icon-navbar{
+    margin: 0 0px;
+    display: flex;
+    justify-content:flex-end;
+}
+.icon-navbar{
+    padding: 10px;
+    font-size: 17px;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+.Icon-NavMenu{
+    padding: 10px;
+    font-size: 20px;
+    color: var(--primary-color);
+    cursor: pointer;
+    display: none;
+}
+.Parnt-Cart-Navbar{
+    position: relative;
+}
+.qty-Notification-Navbar{
+    position: absolute;
+    top: 0px;
+    right: 3px ;
+    background-color: var(--primary-hover-color);
+    color: var(--secondary-color);
+    padding:0 3px;
+    border-radius: 50%;
+    line-height: 16px;
+}
+/*end Navbar icon */
+/*start style logo*/
+.logo-navbar{
+    width: 145px;
+    margin: 40px;
+}
+/*end style logo*/
+/*start Menu User*/
+.icon-user-navbar{
+    padding: 10px;
+    font-size: 17px;
+    position: relative;
+    color: var(--primary-color);  
+}
+@keyframes animationuser{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+/*Start Media*/
+@media (max-width: 1250px){
+    .Navigation > li{
+        padding: 5px;
+    }
+}
+@media (max-width: 992px) {
+    .continer-nav{
+        width: 100%;
+    }
+    .Icon-NavMenu{
+        display: block;
+    }
+    .Top-Menu-Navigation{
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 25px;
+        cursor: pointer;
+    }
+    .Navigation{
+        width: 50%;
+        display: block;
+        background-color: #fff;
+        z-index: 9999;
+        position: fixed;
+        height: 100%;
+        left: -500px;
+        top: 0;
+        transition: all 0.8s ease;
+        overflow: hidden;
+    }
+    .Navigation .SubMenu{
+        position: static;
+        box-shadow: 0 0px 1px var(--border-color);
+        border: none;
+        
+    }
+    .Mobile-SubMenu{
+        display: block;
+    }
+    .Navigation .Mobile-SubMenu li{
+        padding: 10px;
+    }
+    .Icon-Minus-Plus-Navbar{
+        color: var(--primary-color);
+        font-weight:900;
+        float: right;
+    }
+    .Navigation .menu:hover .SubMenu{
+        display: none;
+    }
+    .logo-navbar{
+        width: 110px;
+    }
+    .Banner-backgruond-NavBar{
+        height: 75%;
+        width: 50%;
+        max-height: 75%;
+        
+    }
+}
+@media (max-width: 768px) {
+    .Banner-backgruond-NavBar{
+        height: 60%;
+        width: 45%;
+    }
+    .logo-navbar{
+        width: 110px;
+    }
+}
+@media (max-width: 480px) {
+    .Banner-backgruond-NavBar{
+        height: 40%;
+        width: 47%;
+    }
+    .logo-navbar{
+        width: 90px;
+        margin: 17px;
+    }
+}
+@media (max-width: 390px) {
+    .Wrapper-Navigation{
+        margin: 4%;
+    }
+    .Banner-backgruond-NavBar{
+        height: 35%;
+        width: 47%;
+    }
+    .Icon-NavMenu, .icon-navbar{
+        padding: 8px;
+        font-size: 15px;
+    }
+}

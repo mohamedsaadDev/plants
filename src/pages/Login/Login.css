@@ -1,0 +1,98 @@
+.Wrapper-Container-Login{
+    background-color: var(--secondary-color);
+    display: flex;
+}
+.Container-New-Customer{
+    width: 35%;
+    height: 25%;
+    border: 1px solid var(--border-color);
+    padding: 10px;
+    margin: 50px 20px;
+    border-radius: 5px;
+}
+.Container-Login{
+    display: flex;  
+    width: 75%;
+}
+.Title-New-Customer{
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+.Top-text-New-Customer{
+    margin: 5px 0;
+}
+.text-New-Customer{
+    margin: 0;
+}
+.btn-New-Customer{
+    margin-top: 5px;
+    padding:10px 40px;
+    border-radius: 25px;
+    background-color: var(--primary-hover-color);
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+.Container-Returning-Customer{
+    margin: 50px 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    padding:10px 40px;
+    width: 40%;
+    height: 32%;
+    overflow: hidden;
+}
+.Title-Returning-Customer{
+    margin: 10px 0;
+    font-size: 20px;
+}
+.Text-Returning-Cutomser{
+    margin: 0 0 7px 0;
+}
+.Input-Login{
+    margin: 10px 0;
+    width: 100%;
+    height: 37px;
+    line-height: 20px;
+    outline: none;
+}
+.Btn-Login{
+    margin: 15px 0 ;
+    padding: 10px 50px;
+    border-radius: 25px;
+    background-color: var(--primary-hover-color);
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+@media(max-width:768px){
+    .Container-Login{
+        display: block;
+        width: 100%;
+    }
+    .Container-New-Customer{
+        width: 90%;
+        height: auto;
+        padding:10px;
+        margin: 2% 5%;
+    }
+    .Container-Returning-Customer{
+        height: auto;
+        width: 90%;
+        margin: 3% 4%;
+        padding: 10px 15px ;
+    }
+    .Input-Login{
+        width: 80%;
+    }
+    .Label-Login{
+        display: block;
+    }
+}
+@media(max-width:540px){
+    .Container-New-Customer {
+        width: 80%;
+    }
+    .Container-Returning-Customer {
+        width: 80%;
+    }
+}

@@ -1,0 +1,127 @@
+.Wraaper-Register{
+    display: flex;
+    background-color: var(--secondary-color);
+}
+.Container-Register{
+    padding: 30px;
+    width: 60%;
+}
+.Top-title-Register{
+    font-size: 18px;
+    margin: 15px 0;
+    color: var(--primary-color);
+}
+.Top-text-Register{
+    margin: 0;
+    font-size: 17px;
+    font-weight: 300;
+    color: var(--primary-color);
+}
+.Link-TransfertoLogin-Register{
+    color: var(--primary-color);
+}
+.Link-TransfertoLogin-Register:hover{
+    color: var(--primary-hover-color);
+    transition: 0.6s;
+}
+.Middle-title-Register{
+    margin: 15px 0;
+    font-size: 20px;
+    font-weight: 300;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom:20px ;
+    color: var(--primary-color);
+}
+.Container-Item-Register{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+.Before-title-Register{
+    display: inline ;
+    color: red;
+}
+.Lable-Register{
+    width: 20%;
+    font-size: 17px;
+}
+.Input-Register{
+    width: 100%;
+    height: 35px;
+    font-size: 15px;
+    outline: none;
+}
+.Title-password-Register{
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom:20px ;
+}
+.Container-btn-Register{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    width: 100%;
+}
+.Text-chechbox-Register{
+    margin-right: 10px;
+}
+.Btn-Register{
+    padding: 0 30px;
+    border-radius: 25px;
+    background-color: var(--primary-hover-color);
+    color: var(--secondary-color);
+    transition: 0.7s ;
+}
+.Btn-Register:hover{
+    background-color: var(--primary-color);
+}
+.Container-Erorr-Register{
+    background-color: rgb(255, 199, 199);
+    width: 70%;
+    margin: 0 0 0 23%;
+    text-align: center;
+    display: none;
+}
+.Masgee-Register{
+    color: red;
+    font-size: 15px;
+}
+@media (max-width: 992px){
+    .Container-Register{
+        width: 80%;
+        margin: 0 10%;
+    }
+}
+@media (max-width: 768px){
+    .Container-Register{
+        width: 90%;
+        margin: 0;
+    }
+}
+@media (max-width: 490px){
+    .Container-Register{
+        width: 100%;
+        padding: 15px;
+    }
+    .Top-text-Register{
+        font-size: 15px;
+    }
+    .Lable-Register{
+        width: 25%;
+    }
+    .Text-chechbox-Register{
+        font-size: 13px;
+    }
+    .Btn-Register{
+        padding: 0 25px;
+        height: 32px;
+    }
+    .Lable-Register{
+        font-size: 14px;
+    }
+    .Input-Register{
+        height: 30px;
+    }
+}

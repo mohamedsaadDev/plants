@@ -1,0 +1,49 @@
+.ui-user{
+    position: absolute;
+    top:70px;
+    right: 100px;
+    width: 160px;
+    padding: 10px;
+    color: var(--primary-color);
+    background-color: #fff;
+    box-shadow: 0 1px 1px var(--primary-color);
+    border-top: 3px solid var(--primary-hover-color);
+    z-index: 2;
+    animation:  animationuser 1.5s ;
+}
+.ui-user .title-submenue{
+    padding: 5px 0 ;
+    border-bottom: 1px solid #e5e5e5;   
+}
+.Real-Link-Menuuser{
+    padding: 5px 0;     
+}
+.Real-Link-Menuuser a{
+    color: #777777;
+}
+.Real-Link-Menuuser a:hover{
+    transition: 0.4ms;
+    color:var(--primary-hover-color);
+}
+.Link-menuuser{
+    padding: 7px 0 7px 10px;
+    cursor: pointer;
+    color: #777777;
+}
+.Link-menuuser:hover{
+    transition: 0.4ms;
+    color:var(--primary-hover-color);
+}
+/*end Menu User*/
+@media (max-width: 768px){
+    .ui-user{
+        right: 85px;
+        width: 155px;
+    }
+}
+@media (max-width: 390px){
+    .ui-user{
+        right: 45px;
+        width: 150px;
+    }
+}

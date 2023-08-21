@@ -1,0 +1,122 @@
+.Wrapper-Continer-Wishlist{
+    background-color: var(--secondary-color);
+    display: flex;
+    width: 100%;
+}
+.Continer-Wishlist{
+    padding: 30px;
+}
+/*start top wishlast*/
+.Top-Wishlist{
+    width: 700px;
+    padding: 15px;
+    margin-top: 30px;
+    border: 1px solid var(--border-color);
+}
+.Icon-wishlist{
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 50%;
+    background-color: aquamarine;
+    margin-right: 10px;
+}
+.Icon-Grid-wishlist{
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    background-color:var(--background-color);
+
+}
+.Icon-Iast-wishlist{
+    border-radius: 50%;
+    padding: 10px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color:var(--background-color);
+}
+.Icon-Iast-wishlist:hover{
+    background-color: var(--primary-hover-color);
+    transition: 0.7s;
+}
+.Icon-Grid-wishlist:hover{
+    background-color: var(--primary-hover-color);
+    transition: 0.7s;
+}
+.Iength-wishlast{
+    display: inline;
+    padding: 20px;
+}
+/*end top wishlast*/
+/*start item wishlast*/
+.Wrapper-Continer-Item-Wishlist{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.Continer-Item-Wishlist{
+    border: 1px solid var(--border-color);
+    margin: 0 30px 30px 0;
+}
+.Img-Item-Wishlast{
+    width:95%;
+}
+.Info-Item-Wishlist{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.Icon-remove-Item-Wishlast{
+    color: var(--primary-hover-color);
+    cursor: pointer;
+}
+.Title-Item-Wishlast{
+    font-size: 17px;
+    font-weight: 400;
+}
+.Price-Item-Wishlast{
+    font-size: 20px;
+    font-weight: 500;
+}
+/*end item wishlast*/
+@media(max-width:992px){
+    .Top-Wishlist{
+        width: 92%;
+    }
+    .Continer-Wishlist{
+        width: 90%;
+        margin: 0 5%;
+    }
+}
+@media(max-width:768px){
+    .Top-Wishlist{
+        width: 92%;
+    }
+    .Continer-Wishlist{
+        width: 100%;
+        margin: 0;
+    }
+    .Continer-Item-Wishlist{
+        margin: 0 10px 30px 0;
+    }
+}
+@media(max-width:600px){
+    .Wrapper-Continer-Item-Wishlist{
+        grid-template-columns: 1fr 1fr;
+    }
+    .Continer-Wishlist{
+        padding: 10px;
+    }
+}
+@media(max-width:390px){
+    .Wrapper-Continer-Item-Wishlist{
+        grid-template-columns: 1fr;
+    }
+    .Continer-Wishlist{
+        padding: 13px;
+    }
+    .Continer-Item-Wishlist {
+        margin: 0 0 30px 0;
+    }
+}

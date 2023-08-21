@@ -1,0 +1,161 @@
+.Wraaper-Container-Modle{
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0,0, 0, 0.8);
+}
+.Container-Modle{
+    position: absolute;
+    z-index: 1500;
+    height: 80%;
+    width: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--secondary-color);
+    display: flex;
+    padding: 20px;
+    border-radius: 10px;
+}
+.Icon-Close-Modal{
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    cursor: pointer;
+    padding: 10px;
+}
+.Container-Img-Modal{
+    width: 50%;
+}
+.Img-Modal{
+    height: 80%;
+    padding: 10px;
+    object-fit: cover;
+    border: 1.5px solid var(--border-color);
+}
+.Container-Info-Modal{
+    width: 100%;
+    padding: 20px;
+}
+.title-item-Modal{
+    margin:0 0 10px 5px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.Reviews-Item-Modal{
+    color: var(--secondary-light-color);
+    margin: 10px 0 10px 7px;
+}
+.Reviews-Item-Modal:hover{
+    color: var(--primary-hover-color);
+}
+.List-Modal {
+    display: flex;
+    padding:10px 0 ;
+}
+.Sub-List-Modal{
+    margin-right: 50px;
+}
+.Sub-List-Modal span {
+    padding: 10px 0;
+}
+/*start end modal*/
+.Qty-title-Modal{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px 5px;
+}
+.Container-Btn-Modal{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Wrapper-Btn-Modal{
+    width:30%;
+    margin: 10px 0 ;
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    text-align: center;
+    display: inline-block;
+    height:40px ;
+}
+.Positive-Btn-Modal{
+    background-color:var(--secondary-color);
+    font-size: 20px;
+    margin-right:10px;
+    cursor: pointer;
+}
+.Show-Qty-Modal{
+    background-color:var(--secondary-color);
+    font-size: 20px;
+    margin-right:10px;
+    cursor: pointer;
+}
+.Negative-Btn-Modal{
+    background-color:var(--secondary-color);
+    font-size: 20px;
+    margin-right:10px;
+    cursor: pointer;
+}
+.Negative-Btn-Modal:disabled{
+    cursor: not-allowed;
+}
+.Btn-AddToCart-Modal{
+    background-color: var(--primary-hover-color);
+    color: var(--secondary-color);
+    width: 140px;
+    margin-left: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.Wrapper-Icon-AddWishlist-Modal{
+    cursor: pointer;
+}
+.Icon-AddWishlist-Modal{
+    margin: 0 10px 10px 7px;
+}
+.title-addtowishlast-modal{
+    display: inline;
+}
+/*end End modal*/
+/*Start Medie Qurey*/
+@media(max-width:992px){
+    .Container-Modle{
+        width: 85%;
+    }
+    .List-Modal{
+        padding: 10px;
+    }
+}
+@media(max-width:768px){
+    .Container-Modle{
+        display: block;
+        overflow-y: auto;
+        overflow-x: hidden  ;
+    }
+    .Container-Img-Modal{
+        text-align: center;
+        width: 100%;
+    }
+    .Img-Modal{
+        width: 80%;
+    }
+    .Container-Btn-Modal{
+        justify-content: start;
+    }
+}
+@media(max-width:480px){
+    .Icon-Close-Modal{
+        right: 2%;
+    }
+    .Btn-AddToCart-Modal{
+        margin: 0;
+    }
+    .Wrapper-Btn-Modal{
+        width: 60%;
+    }
+}

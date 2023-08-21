@@ -1,0 +1,44 @@
+.Container-Banner{
+    width: 100%;
+    background-color: var(--primary-hover-color );
+    height:70px;
+    overflow: hidden;
+    
+}
+.Banner{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.Icon-Banner{
+    margin:0 7px 5px 0;
+    width: 20px;
+    color: var(--secondary-color);
+}
+.Title-Banner,.Link-ToHome-Banner{
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--secondary-color);
+    margin: 0 5px;
+}
+/* display: flex;
+    justify-content: center;
+    align-items:center;*/
+@media(max-width:768px){
+    .Container-Banner{
+        height: 60px;
+    }
+    .Title-Banner, .Link-ToHome-Banner {
+        font-size: 18px;
+    }
+}
+@media(max-width:768px){
+    .Container-Banner{
+        height: 50px;
+    }
+    .Title-Banner, .Link-ToHome-Banner {
+        font-size: 16px;
+    }
+}

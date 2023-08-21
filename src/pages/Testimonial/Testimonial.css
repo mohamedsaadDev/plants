@@ -1,0 +1,212 @@
+
+.Background-Img-Testimonial{
+    background-image: url(../../imges/BannerImg.jpg);
+    background-size: cover;
+    padding: 6% 0;
+    text-align: center;
+}
+.Continer-Toptext-Testimonial{
+    color: var(--secondary-color);
+}
+.Toptext-Testimonial{
+    font-size: 30px;
+}
+.Middletext-Testimonial{
+    font-size: 40px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.Button-Testimonial{
+    padding: 15px 40px;
+    border-radius: 20px;
+    color: var(--secondary-color);
+    background-color: var(--primary-hover-color);
+    cursor: pointer; 
+}
+.Button-Testimonial:hover{
+    background-color: var(--primary-color);
+    transition: ease-in-out 0.8s;
+}
+.Wraaper-Testimonial{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.Swiper-Testimonial {
+    width: 80%;
+    height: 100%;
+    margin-top: -55px;
+    border: 10px solid var(--secondary-color);
+    background-color: var(--background-color);
+}
+.swiper-slide-Testimonial {
+    font-size: 18px;
+    background-color: var(--background-color);
+}
+.swiper-slide .Img-Slider-testimonial {
+    display: block;
+    width:150px;
+    height: 150px;
+    object-fit: cover;
+    margin-left: 42%;
+    margin-top: 5%;
+    border-radius: 110px;
+    border: 4px solid var(--primary-hover-color);
+}
+.Iconleft-Quote-Testimonial{
+    font-size: 50px;
+    color: var(--border-color);
+    position: absolute;
+    top: 20%;
+    left: 8%;
+}
+.Iconright-Quote-Testimonial{
+    font-size: 50px;
+    color: var(--border-color);
+    position: absolute;
+    top: 35%;
+    right:17%;
+}
+.title-slider-testimonial{
+    font-size: 40px;
+    font-weight: 400;
+}
+.paragraph-slider-testimonial{
+    width: 680px;
+    margin-left: 15%;
+}
+/*Start Media Query*/
+/*There is a better way than that*/
+
+@media (max-width:  992px){
+    .Swiper-Testimonial{
+        margin-top: -40px;
+    }
+    .Iconleft-Quote-Testimonial{
+        top: 20%;
+        left: 2%;
+    }
+    .Iconright-Quote-Testimonial{
+        top: 35%;
+        right:2%;
+    }
+    .paragraph-slider-testimonial{
+        width: 570px;
+        margin-left: 10%;
+    }
+}
+@media (max-width: 830px) {
+    .Iconleft-Quote-Testimonial{
+        top: 20%;
+        left: 2%;
+    }
+    .Iconright-Quote-Testimonial{
+        top: 40%;
+        right:2%;
+    }
+    .paragraph-slider-testimonial{
+        width: 470px;
+        margin-left: 10%;
+    }
+}
+@media (max-width:  730px){
+    .swiper-slide-Testimonial .Img-Slider-testimonial{
+        margin-left: 30% ;
+    }
+    .paragraph-slider-testimonial{
+        width: 400px;
+        margin-left: 10%;
+    }
+    .Iconright-Quote-Testimonial{
+        top: 45%;
+        right:2%;
+    }
+    .Swiper-Testimonial{
+        margin-top: -25px;
+    }
+}
+@media(max-width:570px){
+    
+    .Toptext-Testimonial{
+        display: none;
+    }
+    .Middletext-Testimonial{
+        font-size: 32px;
+    }
+    .paragraph-slider-testimonial{
+        margin-left: 5%;
+        width: 350px;
+    }
+    .Iconright-Quote-Testimonial{
+        top: 50%;
+        right: 20%;
+        font-size: 35px;
+    }
+    .Iconleft-Quote-Testimonial{
+        top : 22%;
+        font-size: 35px;
+        left: 1%;
+    }
+}
+@media (max-width:460px){
+    .title-slider-testimonial{
+        margin: 10px;
+    }
+    .paragraph-slider-testimonial{
+        margin-left: 9%;
+        width: 280px;
+        font-size: 14px;
+    }
+    .Iconleft-Quote-Testimonial{
+        top: 14%;
+    }
+    .Iconright-Quote-Testimonial{
+        top: 45%;
+        right: 8%;
+    }
+    .Swiper-Testimonial {
+        margin-top: -18px;
+    }
+    .Button-Testimonial{
+        padding: 10px 32px;
+        height: 35px;
+    }
+}
+@media (max-width:400px){
+    .paragraph-slider-testimonial{
+        width: 80%;
+    }
+    .Iconright-Quote-Testimonial{
+        top: 48%;
+    }
+    
+}
+@media (max-width:380px){
+    .Middletext-Testimonial{
+        font-size: 25px
+    }
+    .swiper-slide-Testimonial .Img-Slider-testimonial{
+        margin-left: 18% ;
+    }
+    .Swiper-Testimonial {
+        
+        margin-top: -12px;
+    }
+    .title-slider-testimonial{
+        font-size: 30px;
+    }
+    .paragraph-slider-testimonial{
+        width: 80%;
+    }
+    .Iconleft-Quote-Testimonial{
+        top: 11%;
+    }
+    .Iconright-Quote-Testimonial{
+        top: 50%;
+    }
+    .Button-Testimonial{
+        padding: 10px 25px;
+        height: 35px;
+    }
+}
+/*end  Media Query*/

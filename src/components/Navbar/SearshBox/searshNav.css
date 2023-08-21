@@ -1,0 +1,103 @@
+/*start box searsh*/
+.wraaper-form-sersh{
+    height: 90px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 550;
+    position: absolute;
+    top: 0;
+    transition: all .5s ease;
+}
+.form-input-searsh{
+    display: flex;
+    justify-content: center;
+    margin-top:25px ;
+}
+.input-sersh-navbar{
+    width: 550px;
+    height: 35px;
+    border-radius: 0;
+    border: 0;
+    outline: none;
+}
+.button-searsh-navbar{
+    width: 40px;
+    height: 35px;
+    border-radius:0 20px 20px 0 ;
+    background-color: var(--primary-hover-color);
+
+}
+.icon-searsh-input{
+    padding:0;
+    margin: 0;
+    border: none;
+}
+.select-options-navbar{
+    height: 35px;
+    border:none;
+    border-radius: 20px 0 0 20px;
+    padding: 0 20px 0 20px;
+    outline: none;
+}
+.hide-searsh-navbar{
+    position: absolute;
+    right: 0;
+    padding: 15px;
+    font-size: 25px;
+    color: #fff;
+    cursor: pointer;
+}
+.wraaper-Continer-Item-Search{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.Continer-Item-Search{
+    margin-top: 5px;
+    background-color:var(--background-color) ;
+}
+.Item-Search{
+    display: flex;
+    align-items: center;
+    width:100%;
+    margin:10px 0;
+}
+.Info-Item-Search{
+    padding: 20px;
+    color: var(--primary-color);
+}
+.Img-Item-Search{
+    width:30%;
+    margin-left: 1%;
+}
+/*end box searsh*/
+@media (max-width: 992px){
+    .form-input-searsh{
+        margin-left: 14%;
+        width:70% ;
+    }
+    .hide-searsh-navbar{
+        font-size: 18px;
+        padding: 10px;
+    }
+}
+@media (max-width: 480px){
+    .form-input-searsh{
+        margin-left: 17%;
+        width:60% ;
+    }
+}
+@media (max-width:390px){
+    .button-searsh-navbar{
+        height: 30px;
+    }
+    .input-sersh-navbar{
+        width: 120px;
+        height: 30px;
+    }
+    .select-options-navbar{
+        height: 30px;
+        padding: 0 7px 0 7px;
+        width: 119px;
+    }
+}

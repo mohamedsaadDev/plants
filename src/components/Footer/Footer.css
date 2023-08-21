@@ -1,0 +1,236 @@
+.Container-Footer{
+    width: 100%;
+    background-color: var(--background-color);
+    padding: 20px 0 0 0;
+    text-align: center;
+}
+/* Start Top Footer*/
+.Ttle-Top-Footer{
+    font-size: 40px;
+    font-weight: 400;
+    color: var(--primary-color);
+    margin: 20px 0 0 0;
+}
+.Paragraph-Top-Footer{
+    color: var(--secondary-light-color);
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+/*Start form Footer */
+.Wrapper-Contanier-Form-Foort{
+    padding: 0 0 0 15px;
+    display: flex;
+    justify-content: center;
+    background-color: var(--background-color);
+}
+.Contanier-Form-Foort{
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    background-color: var(--secondary-color);
+    padding: 0 15px ;
+
+}
+.Input-Top-Footer{
+    border: 0;
+    padding: 13px 20px;
+    font-size: 16px;
+    outline: none;
+    width: 400px
+}
+.Btn-Top-Footer{
+    margin: 0;
+    padding: 12px 30px;
+    font-size: 14px;
+    line-height: 20px;
+    border-radius: 25px;
+    background-color: var(--primary-hover-color);
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+.Btn-Top-Footer:hover{
+    background-color: var(--primary-color);
+}
+/*End form Footer */
+/*Start Icon Footer */
+.Container-Icon-Footer{
+    margin: 40px;
+}
+.Icon-Top-Footer{
+    margin-right: 15px;
+    width: 34px;
+    line-height: 34px;
+    background-color: var(--border-color);
+    text-align: center;
+    border-radius: 40px;
+    cursor: pointer;
+}
+.Icon-Top-Footer:hover{
+    background-color: var(--primary-hover-color);
+    color: var(--secondary-color);
+    transition: 0.5s;
+}
+
+/*End Icon Footer */
+/* End Top Footer*/
+/* Start Middel Footer*/
+.continer-middle-Footer{
+    border-top: 1px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px 20px 50px ;
+    text-align: start;
+}
+.Title-Middle-Footer{
+    font-size: 20px;
+    margin: 25px 0 15px 0;
+}
+.Line-Foter{
+    cursor: pointer;
+    color: var(--secondary-light-color);
+    padding: 8px 0;
+
+}
+.Link-Footer{
+    color: var(--secondary-light-color);
+}
+.Contact-Info-Footer{
+    width: 20%;
+}
+.Icon-Middel-Footer{
+    color: var(--primary-hover-color);
+}
+.Information-Footer{
+    width: 20%;
+}
+.MyAccount{
+    width: 20%;
+}
+.Extras-Footer{
+    width: 20%;
+}
+.Arrow-Showdown-Footer{
+    display: none;
+}
+.contaner-Arrow-Footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+/* End Middel Footer*/
+/* Start End Footer*/
+.End-Footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    border-top: 1px solid var(--border-color);
+}
+.Text-End-Footer{
+    color: var(--secondary-light-color);
+}
+/* end End Footer*/
+/*Start Media Qurey Footer*/
+@media (max-width:992px){
+    .Ttle-Top-Footer {
+        font-size: 35px
+    }
+    .continer-middle-Footer{
+        display: block;
+    }
+    .Contact-Info-Footer,
+    .Information-Footer,
+    .MyAccount,
+    .Extras-Footer {
+        width: 100%;
+    }
+    .hidden-Container-Item-Footer{
+        display: none;
+    }
+    .Show-Container-Item-Footer{
+        animation: anmma 0.8s;
+    }
+    @keyframes anmma {
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    .Arrow-Showdown-Footer{
+        display: block;
+    }
+}
+@media (max-width:768px){
+    .Contanier-Form-Foort{
+        padding: 0 5px 0 15px;   
+    }
+    .Ttle-Top-Footer {
+        font-size: 33px
+    }
+    .Paragraph-Top-Footer{
+        padding: 0 8px;
+        font-size: 14px;
+    }
+    .Input-Top-Footer{
+        width: 290px;
+        padding: 10px 0 10px 17px;
+    }
+    .Btn-Top-Footer{
+        padding: 8px 25px;
+    }
+    .Title-Middle-Footer{
+        font-size: 15px;
+        margin: 15px 0 15px 0;
+    }
+    .End-Footer{
+        display: block;
+    }
+}
+@media (max-width:510px){
+    .continer-middle-Footer{
+        padding: 0 30px 20px 30px;
+    }
+    .Input-Top-Footer{
+        width: 100%;
+    }
+    .Btn-Top-Footer{
+        height: 33px;
+    }
+}
+@media (max-width:400px){
+    .Wrapper-Contanier-Form-Foort {
+        padding: 0;
+    }
+    .continer-middle-Footer{
+        padding: 0 20px 10px 20px;
+    }
+    .Ttle-Top-Footer{
+        font-size: 28px;
+    }
+    .Input-Top-Footer{
+        width: 70%;
+    }
+    .Btn-Top-Footer{
+        height: 33px;
+        padding: 8px 18px;
+    }
+    .Title-Middle-Footer{
+        font-size: 12px;
+        margin: 12px 0 12px 0;
+    }
+    .Text-End-Footer{
+        font-size: 13px;
+    }
+    .Arrow-Showdown-Footer{
+        font-size: 12px;
+    }
+    .End-Footer{
+        padding: 0 17px;
+    }
+}
+/*End Media Qurey Footer*/

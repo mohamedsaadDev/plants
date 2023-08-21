@@ -1,0 +1,19 @@
+.Arrow-ScrolleTop{
+    position: fixed;
+    right: 10px;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    padding: 20px;
+    border-radius: 25px;
+    line-height: 10px;
+    z-index: 20000;
+    box-shadow: 2px 2px 2px var(--border-color);
+    cursor: pointer;
+    top: 90vh;
+    display: none;
+}
+@media(max-width:480px){
+    .Arrow-ScrolleTop{
+        padding: 17px;
+    }
+}
