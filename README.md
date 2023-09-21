@@ -1,13 +1,13 @@
 # plants
 ## It is a web application for e-commerce through which products can be added to the cart and deleted
 ## features
-*Add products to your shopping cart
-*Valid form using regular expression
-*Wishlist
-*Page for each product
-*A blog and every article has a page
-*Search for products
-*Responsive design
+### Add products to your shopping cart
+### Valid form using regular expression
+### Wishlist
+### Page for each product
+### A blog and every article has a page
+### Search for products
+### Responsive design
 ## Technologies Used
 *React
 *Redux 
